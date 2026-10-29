@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informe UNEFA - Capa 1: Física (Modelo OSI)</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ================= HOJA 1: PORTADA ================= -->
+    <section class="hoja portada">
+        <header class="cabecera-portada">
+            <img src="Logo-Unefa.png" alt="Logo UNEFA Izquierda" class="logo">
+            <img src="Logo-Unefa.png" alt="Logo UNEFA Derecha" class="logo">
+        </header>
+
+        <div class="texto-institucional">
+            <p>República Bolivariana de Venezuela</p>
+            <p>Ministerio del Poder Popular Para la Defensa</p>
+            <p>Universidad Nacional Experimental Politécnica de la Fuerza Armada Nacional</p>
+            <p>UNEFA - Núcleo Guárico</p>
+            <p>Ingeniería de Sistemas - VIII Semestre</p>
+        </div>
+
+        <div class="titulo-portada">
+            <h1>Capa 1: Física</h1>
+        </div>
+
+        <div class="firmas-portada">
+            <div class="profesor">
+                <p><strong>Profesor:</strong></p>
+                <p>Raul Blanco</p>
+            </div>
+            <div class="bachiller">
+                <p><strong>Bachiller:</strong></p>
+                <p>Krisber Diaz</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= HOJA 2: CONTENIDO (Página 1) ================= -->
+    <section class="hoja contenido">
+        <div class="cuerpo-texto">
+            <h2>Fundamentos de la Capa Física</h2>
+            <p>
+                La Capa 1, conocida como la Capa Física del modelo OSI (Open Systems Interconnection), constituye el nivel más bajo de la arquitectura de red y representa el soporte tangible sobre el cual viaja toda la información. Su función primordial es la transmisión de bits a través de un medio de comunicación físico, ya sea cable de cobre, fibra óptica o ondas de radio. Esta capa define las especificaciones eléctricas, mecánicas, de procedimiento y funcionales necesarias para activar, mantener y desactivar el enlace físico entre sistemas finales . En esencia, se encarga de convertir los datos digitales en señales susceptibles de ser propagadas por el medio y, en el extremo receptor, realizar el proceso inverso.
+            </p>
+            <p>
+                Entre las responsabilidades clave de la Capa Física se encuentran la codificación de datos (transformar bits en señales eléctricas o luminosas), la señalización (determinar la representación de un uno y un cero), la transmisión de bits (envío de la señal a través del medio) y la definición de la topología de la red (cómo se conectan físicamente los dispositivos). Además, establece aspectos críticos como el tipo de conector, la cantidad de pines, los niveles de tensión eléctrica y la velocidad de transmisión permitida .
+            </p>
+            <p>
+                Es fundamental comprender que la Capa Física no interpreta los datos ni conoce direcciones MAC o IP; simplemente se limita a mover bits de un extremo a otro. Los dispositivos que operan en este nivel incluyen repetidores, concentradores (hubs), cables, conectores y adaptadores de red (NIC). Sin esta capa, ninguna de las capas superiores podría funcionar, ya que no existiría un medio tangible para el intercambio de información.
+            </p>
+        </div>
+        <div class="numero-pagina">1</div>
+    </section>
+
+    <!-- ================= HOJA 3: CONTENIDO (Página 2) ================= -->
+    <section class="hoja contenido">
+        <div class="cuerpo-texto">
+            <h2>Medios de Transmisión Guiados</h2>
+            <p>
+                Los medios guiados confinan las señales a un camino físico específico, ofreciendo mayor control sobre la transmisión. El par trenzado, ampliamente utilizado en redes Ethernet y telefonía, consiste en dos alambres de cobre aislados y entrelazados helicoidalmente para cancelar las interferencias electromagnéticas externas [citation:8]. Existen versiones sin blindaje (UTP) y con blindaje (STP), siendo la categoría 5e y 6 las más comunes en instalaciones modernas.
+            </p>
+            <p>
+                El cable coaxial posee un núcleo conductor central rodeado por un aislante dieléctrico, una malla metálica de blindaje y una cubierta exterior. Esta construcción le permite transportar señales de mayor frecuencia que el par trenzado y abarcar distancias más largas con menores pérdidas, aunque su uso en redes locales ha disminuido frente a las alternativas más modernas [citation:8].
+            </p>
+            <p>
+                La fibra óptica representa el medio guiado de mayor rendimiento. Utiliza hilos de vidrio o plástico para transmitir pulsos de luz, lo que le confiere una inmunidad total a las interferencias electromagnéticas y un ancho de banda excepcionalmente alto. Se clasifica en fibra monomodo (para largas distancias) y multimodo (para distancias moderadas dentro de edificios o campus).
+            </p>
+        </div>
+        <div class="numero-pagina">2</div>
+    </section>
+
+    <!-- ================= HOJA 4: CONTENIDO (Página 3) ================= -->
+    <section class="hoja contenido">
+        <div class="cuerpo-texto">
+            <h2>Medios No Guiados y Estándares IEEE 802.3</h2>
+            <p>
+                Los medios no guiados, también denominados inalámbricos, permiten la propagación de ondas electromagnéticas a través del aire, el vacío o el agua, sin confinarlas a un camino físico [citation:13]. En esta categoría se incluyen las transmisiones por radiofrecuencia (Wi-Fi, Bluetooth), microondas terrestres y satelitales, e infrarrojos. Su principal ventaja es la movilidad y la facilidad de instalación en entornos donde el cableado resulta impracticable, aunque son más susceptibles a interferencias y problemas de seguridad.
+            </p>
+            <p>
+                En el ámbito de los estándares, la Capa Física de Ethernet está regulada por el IEEE 802.3. A lo largo de las décadas, este estándar ha evolucionado para soportar diferentes velocidades y medios. Por ejemplo, el estándar 10BASE-T definió la transmisión de 10 Mbps sobre par trenzado con un alcance de hasta 100 metros, mientras que 100BASE-TX elevó la velocidad a 100 Mbps utilizando dos pares de categoría 5 [citation:4]. Posteriormente, 1000BASE-T (Gigabit Ethernet) y los estándares actuales de 10 Gbps han continuado ampliando las capacidades de la Capa 1.
+            </p>
+            <p>
+                Estos estándares no solo especifican la velocidad y el medio, sino también los detalles de codificación de línea, los niveles de voltaje y los conectores (como RJ-45 para cobre o LC/SC para fibra). El cumplimiento de estas normas garantiza la interoperabilidad entre equipos de diferentes fabricantes, lo cual es un pilar fundamental del modelo OSI.
+            </p>
+        </div>
+        <div class="numero-pagina">3</div>
+    </section>
+
+    <!-- ================= HOJA 5: CONTENIDO (Página 4) ================= -->
+    <section class="hoja contenido">
+        <div class="cuerpo-texto">
+            <h2>Dispositivos y Consideraciones Finales</h2>
+            <p>
+                Los dispositivos que operan estrictamente en la Capa 1 carecen de inteligencia para tomar decisiones basadas en direcciones o protocolos. El repetidor, por ejemplo, recibe una señal debilitada, la regenera y la retransmite, extendiendo la distancia de la red sin analizar su contenido. El hub o concentrador es esencialmente un repetidor multipuerto que difunde toda la información recibida por un puerto hacia todos los demás, lo que genera colisiones y limita el rendimiento en redes con múltiples dispositivos activos.
+            </p>
+            <p>
+                Es importante distinguir entre la Capa Física y la Capa de Enlace de Datos (Capa 2). Mientras que la Capa 1 se ocupa de la transmisión de bits y las características eléctricas del medio, la Capa 2 gestiona el direccionamiento físico (MAC), la detección de errores y el control de acceso al medio. Esta separación permite que las capas superiores se abstraigan de los detalles eléctricos y mecánicos, facilitando el diseño de protocolos y aplicaciones independientes de la tecnología de transmisión subyacente.
+            </p>
+            <p>
+                En conclusión, la Capa Física es el cimiento sobre el cual se construye toda comunicación en red. Aunque a menudo pasa desapercibida para los usuarios finales, su correcta implementación y el cumplimiento de los estándares internacionales determinan la velocidad, la estabilidad y la confiabilidad de cualquier infraestructura de telecomunicaciones.
+            </p>
+        </div>
+        <div class="numero-pagina">4</div>
+    </section>
+
+</body>
+</html>
